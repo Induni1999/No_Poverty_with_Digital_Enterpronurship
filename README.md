@@ -1,2 +1,3 @@
-# No_Poverty_with_Digital_Enterpronurship
-In this project we hope to show the path to build own startup for jobless and very poor person in the World.
+# No_Poverty_with_Digital_Entrepreneurship
+Through this project, we are aspiring to initiate a startup to uplift the economic standing of the jobless and the destitute,on a global scale, by introducing digital entrepreneurship. 
+
