@@ -8,7 +8,72 @@
 .header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 131, 136, 0.5),rgba(0, 131, 136, 0.5)),url(No_Poverty_with_Digital_Enterpronurship/images/poverty.jpeg);
+    background-image: linear-gradient(rgba(0, 131, 136, 0.5),rgba(0, 131, 136, 0.5)),url(E:\No_Poverty_with_Digital_Enterpronurship\images\poverty.jpeg);
     background-position: center;
     background-size: cover;
+    overflow-x: hidden;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    transition: background 1s;
+}
+
+nav.logo img{
+    width: 100px;
+    margin-right: 10px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+nav:hover{
+    background: #fff;
+}
+nav:hover .logo{
+    color: #333;
+}
+nav:hover ul li a{
+    color: #333;
+}
+.content{
+    margin-top: 9%;
+    margin-left: 9%;
+    color: #fff;
+}
+.content h1{
+    font-size: 120px;
+    line-height: 140px;
+    font-weight: 600;
+}
+.content p{
+    max-width: 500px;
+    line-height: 28px;
+    opacity: 0;
+}
+.slide-left{
+    animation: slideleft 1s linear forwards;
+}
+@keyframes slideleft{
+    0%{
+        transform:translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+p.slide-left{
+    animation-delay: 1s;
 }
