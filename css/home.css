@@ -12,15 +12,24 @@
     background-position: center;
     background-size: cover;
     overflow-x: hidden;
+    
 }
 
 nav{
+    background-color: #7fc5ff;
+    position: fixed;
+    vertical-align: top;
+    height: 5em;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 18px 8%;
     transition: background 1s;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    
 }
 
 nav.logo img{
@@ -80,13 +89,14 @@ p.slide-left{
 .banner-area{
     background-image: linear-gradient(rgba(0, 131, 136, 0.5),rgba(0, 131, 136, 0.5)),url(../images/poverty.jpeg);
     background-size: cover;
-    top: 100px;
-    height: 100vh;
+    top: 80px;
+    height: 80vh;
     width: 100%;
-    position: fixed;
+    position: absolute;
+   
 
 }
-.banner-area::after{
+.banner-area:after{
     content: '';
     position: absolute;
     top: 0;
@@ -97,4 +107,29 @@ p.slide-left{
     opacity: -7;
     z-index: -1;
 
+}
+.content2{
+    background-image: linear-gradient(rgba(0, 131, 136, 0.5),rgba(0, 131, 136, 0.5)),url(../images/Enterprenuship\ sketch.jpg);
+    background-size: cover;
+    top: 500px;
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    margin-top: 11%;
+    color: #fff;
+}
+.content2 h2{
+    color: black;
+    font-size: 90px;
+    line-height: 140px;
+    font-weight: 600;
+    margin-left: 9%;
+}
+.content2 p{
+    max-width: 800px;
+    font-size: medium;
+    line-height: 28px;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    
 }
