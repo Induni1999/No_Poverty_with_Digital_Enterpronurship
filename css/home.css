@@ -8,7 +8,7 @@
 .header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 131, 136, 0.5),rgba(0, 131, 136, 0.5));
+    background-image: linear-gradient(rgba(14, 241, 230, 0.87),rgba(23, 248, 199, 0.329));
     background-position: center;
     background-size: cover;
     overflow-x: hidden;
@@ -87,7 +87,7 @@ p.slide-left{
     animation-delay: 1s;
 }
 .banner-area{
-    background-image: linear-gradient(rgba(0, 131, 136, 0.5),rgba(0, 131, 136, 0.5)),url(../images/poverty.jpeg);
+    background-image: linear-gradient(rgba(8, 240, 248, 0.534),rgba(8, 240, 248, 0.534)),url(../images/poverty.jpeg);
     background-size: cover;
     top: 80px;
     height: 80vh;
@@ -109,7 +109,7 @@ p.slide-left{
 
 }
 .content2{
-    background-image: linear-gradient(rgba(0, 131, 136, 0.5),rgba(0, 131, 136, 0.5)),url(../images/Enterprenuship\ sketch.jpg);
+    background-image: linear-gradient(rgba(1, 15, 15, 0.5),rgba(1, 12, 12, 0.5)),url(../images/Enterprenuship\ sketch.jpg);
     background-size: cover;
     top: 500px;
     height: 90vh;
@@ -126,6 +126,44 @@ p.slide-left{
     margin-left: 9%;
 }
 .content2 p{
+    max-width: 800px;
+    font-size: medium;
+    line-height: 28px;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    
+}
+
+.content2:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: -7;
+    z-index: -1;
+
+}
+.content3{
+    background-image: linear-gradient(rgba(6, 124, 124, 0.5),rgba(3, 138, 138, 0.5)),url(../images/mindset.jpg);
+    background-size: cover;
+    top: 500px;
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    margin-top: 11%;
+    color: #fff;
+}
+.content3 h2{
+    color: white;
+    font-size: 90px;
+    line-height: 140px;
+    font-weight: 600;
+    margin-left: 9%;
+}
+.content3 p{
     max-width: 800px;
     font-size: medium;
     line-height: 28px;
