@@ -5,11 +5,11 @@
 }
 body{
 	background-image: url("12.jpg");
-	background-size: 100%;
+	background-size: 200%;
 	background-position: 0px 0px;
 }
 img{
-   margin: 50px 100px 50px 630px;
+   margin: 50px 100px 50px 470px;
 }
 
 .B{
@@ -20,5 +20,4 @@ i{
 }
 P{
 	 margin: 5px 500px 50px 500px;
-}
 }
