@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+body{
+	background-image: url("12.jpg");
+	background-size: 200%;
+	background-position: 0px 0px;
+}
+img{
+   margin: 50px 100px 50px 640px;
+}
+
+.B{
+	text-align: center;	
+}
+i{
+	 margin: 10px 80px 80px 80px;
+}
+P{
+	 margin: 5px 500px 50px 500px;
+}
+.I{
+	text-align: center;	
+}
