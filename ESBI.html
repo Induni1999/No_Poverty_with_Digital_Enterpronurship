@@ -1,0 +1,52 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="ESBI.css" type="text/css">
+<body>
+<img src="B.jpg" >
+
+<!-- Band Description -->
+<section class="B" style="max-width:600px">
+  <h2 class="B">The B </h2>
+  <p class="Business"><i>Business owner</i></p>
+  <p class="P">This group of people could almost be the opposite of the S. 
+Those who are true B’s like to surround themselves with smart 
+people from all four categories: E, S, B, and I. Unlike the S, 
+who doesn’t like to delegate work (because no one can do it 
+better), the B likes to delegate. The true motto of a B is, “Why 
+do it yourself when you can hire someone to do it for you, and 
+they can do it better?”<br>Henry Ford fit this mold. As one popular story goes, a group 
+of so-called intellectuals came by to condemn Ford for being 
+ignorant. They claimed he really didn’t know much. So Ford 
+invited them into his office and challenged them to ask him 
+any question, and he would answer it. So this panel assembled 
+around America’s most powerful industrialist and began to ask 
+him questions. Ford listened to their questions and, when they were through, he simply reached for several phones on his desk 
+and called in some of his bright assistants and asked them to 
+give the panel the answers they sought. <br>One of the quotes credited to Ford goes: “Thinking is the 
+hardest work there is. That is why so few people engage in it.”<br>One of the quotes credited to Ford goes: “Thinking is the 
+hardest work there is. That is why so few people engage in it.”</p>
+
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
+
