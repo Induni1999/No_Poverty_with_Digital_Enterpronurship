@@ -89,10 +89,10 @@ p.slide-left{
 .banner-area{
     background-image: linear-gradient(rgba(8, 240, 248, 0.534),rgba(8, 240, 248, 0.534)),url(../images/poverty.jpeg);
     background-size: cover;
-    top: 80px;
-    height: 80vh;
+    
+    height: 100vh;
     width: 100%;
-    position: absolute;
+    position: relative;
    
 
 }
@@ -111,10 +111,10 @@ p.slide-left{
 .content2{
     background-image: linear-gradient(rgba(1, 15, 15, 0.5),rgba(1, 12, 12, 0.5)),url(../images/Enterprenuship\ sketch.jpg);
     background-size: cover;
-    top: 500px;
-    height: 90vh;
+    
+    height: 100vh;
     width: 100%;
-    position: absolute;
+    position: relative;
     margin-top: 11%;
     color: #fff;
 }
@@ -136,7 +136,7 @@ p.slide-left{
 
 .content2:after{
     content: '';
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     display: block;
@@ -149,10 +149,10 @@ p.slide-left{
 .content3{
     background-image: linear-gradient(rgba(6, 124, 124, 0.5),rgba(3, 138, 138, 0.5)),url(../images/mindset.jpg);
     background-size: cover;
-    top: 500px;
+    
     height: 90vh;
     width: 100%;
-    position: absolute;
+    position: relative;
     margin-top: 11%;
     color: #fff;
 }
