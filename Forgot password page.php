@@ -20,12 +20,12 @@
 	<br>
 	<label>Create new password </label>
 	<br>
-	<input type="password" name="name" id="name" placeholder="Create New password">
+	<input type="password" name="password" id="name" placeholder="Create New password">
 	<br>
 	<br>
 	<label>Re-Enter new  password  </label>
 	<br>
-	<input type="password" name="password" id="name" placeholder="Re-Enter new password">
+	<input type="password" name="repassword" id="name" placeholder="Re-Enter new password">
 	<br>
 	<br>
 	<br>
