@@ -40,6 +40,10 @@
 	<br>
 	<input type="email" name="email" id="name" placeholder="Enter Your Valid email">
 	<br><br>
+	<label>User Name</label>
+	<br>
+	<input type="text" name="username" id="uname" placeholder="Enter Your username">
+	<br><br>
 	<label>Password</label>
 	<br>
 	<input type="password" name="password" id="name" placeholder="Create a password">
