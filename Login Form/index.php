@@ -1,6 +1,6 @@
 <?php include('server.php') ?>
 
-<?php echo "
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -14,17 +14,17 @@
       <h1>Login</h1>
       <form method="post" action="index.php">
         <div class="txt_field">
-          <input type="text" required>
+          <input type="text" name= "username" required>
           <span></span>
           <label>Username</label>
         </div>
         <div class="txt_field">
-          <input type="password" required>
+          <input type="password" name="password" required>
           <span></span>
           <label>Password</label>
         </div>
         <div class="pass">Forgot Password?</div>
-        <input type="submit" value="Login">
+        <input type="submit" value="Login" name="login_user">
         <div class="signup_link">
           Not a member? <a href="register page.php">Signup</a>
         </div>
@@ -32,4 +32,4 @@
     </div>
 
   </body>
-</html>"?>
+</html>
