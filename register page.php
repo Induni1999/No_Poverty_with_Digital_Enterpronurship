@@ -1,5 +1,6 @@
 <?php include('server.php') ?>
 
+
 <html>
 <head>
 	<title>Registration Form</title>
@@ -62,4 +63,4 @@
 	</form>
 
 </body>
-</html>	
+</html>
