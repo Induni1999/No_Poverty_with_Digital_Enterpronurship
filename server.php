@@ -58,7 +58,7 @@ if (isset($_POST['submit'])) {
   	$password = md5($password_1);//encrypt the password before saving in the database
 
   	$query = "INSERT INTO rejistration (First_Name, Last_Name, Age,Email,Gender,ContactNo,Password,RePassword,Username) 
-  			  VALUES(' $Firstname', '$Lastname', '$Age','$email','$Gender','$Pnumber','$password_1','$password_2',' $username')";
+  			  VALUES(' $Firstname', '$Lastname', '$Age','$email','$Gender','$Pnumber','$password','$password',' $username')";
   	mysqli_query($db, $query);
   	$_SESSION['username'] = $username;
   	$_SESSION['success'] = "You are now logged in";
@@ -80,7 +80,7 @@ if (isset($_POST['login_user'])) {
     }
   
     if (count($errors) == 0) {
-        $password = md5($password);
+        $Password = md5($password);
         $query = "SELECT * FROM rejistration WHERE Username='$username' AND Password='$password'";
         $results = mysqli_query($db, $query);
         if (mysqli_num_rows($results) == 1) {
@@ -92,5 +92,34 @@ if (isset($_POST['login_user'])) {
         }
     }
   }
+
+  // Upadate new password
+if (isset($_POST['submit'])) {
+    $username =  mysqli_real_escape_string($db, $_POST['username']);
+	$password_1 =  mysqli_real_escape_string($db, $_POST['password']);
+	$password_2=  mysqli_real_escape_string($db, $_POST['repassword']);
+
+    if (empty($username)) {
+        array_push($errors, "Username is required");
+    }
+    if (empty($password_1)) {
+        array_push($errors, "Password is required");
+    }
+    if ($password_1 != $password_2) {
+        array_push($errors, "The two passwords do not match");
+      }
+
+  
+    if (count($errors) == 0) {
+        $password = md5($password_1);
+
+	mysqli_query($db, "UPDATE rejistration SET Password='$password', RePassword='$password' WHERE Username=$username");
+	$_SESSION['message'] = "Address updated!"; 
+	header('location: home.html');}
+    else{
+        array_push($errors, "Wrong username");
+    }
+  
+}
   
 ?>
